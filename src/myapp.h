@@ -11,7 +11,7 @@ class my_app : public sdlw::gl_application
 public:
     my_app(int argc, char** argv) :
         sdlw::gl_application(argc, argv),
-        part_sys(512),
+        part_sys(8192),
         mvp_location(-1),
         part_mvp_location(-1),
         part_current_time_location(-1),

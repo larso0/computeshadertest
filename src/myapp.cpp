@@ -69,14 +69,14 @@ void my_app::render(float delta)
     glUniformMatrix4fv(part_mvp_location, 1, GL_FALSE, glm::value_ptr(mvp_mat));
     part_sys.draw();
 
-   /* program.use();
+    program.use();
     for(my_app::object& o : objects)
     {   glm::mat4 mvp_mat = glm::translate(glm::mat4(), o.position);
         mvp_mat = glm::scale(mvp_mat, o.scale);
         mvp_mat = projection_matrix * view_matrix * mvp_mat;
         glUniformMatrix4fv(mvp_location, 1, GL_FALSE, glm::value_ptr(mvp_mat));
         o.geometry->draw();
-    }*/
+    }
     swap_buffers();
 }
 
